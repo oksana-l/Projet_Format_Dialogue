@@ -135,4 +135,7 @@ $ sudo systemctl restart prosody.service
 $ sudo systemctl restart jicofo.service
 $ sudo systemctl restart jitsi-videobridge2.service
 ```
-
+Check BDD 
+```bash
+$ sudo prosodyctl mod_version.lua
+```bash
