@@ -2,7 +2,7 @@ installation du serveur:
 connexion  ssh -l ubuntu vps-6b41fb75.vps.ovh.ca
 pass: OksaBadreAlex1234321
 
-puis connexion ssh -l avenir@avenir843.pro.dns-orange.fr
+puis connexion ssh avenir@avenir843.pro.dns-orange.fr
 login: avenir
 pass: aaa
 
