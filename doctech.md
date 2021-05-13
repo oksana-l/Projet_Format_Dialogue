@@ -135,19 +135,19 @@ $ sudo systemctl restart prosody.service
 $ sudo systemctl restart jicofo.service
 $ sudo systemctl restart jitsi-videobridge2.service
 ```
-
 Check BDD Users
 ```bash
 $ sudo prosodyctl mod_listusers
 ```
-
 ADD User
 ```bash
 $ sudo prosodyctl register <username> <hostname> <password>
 ```
-
 DELET User
 ```bash
 $ sudo prosodyctl deluser <user@hostname>
 ```
-
+Change password
+```bash
+$ sudo prosodyctl passwd <username>
+```
