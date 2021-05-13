@@ -137,5 +137,5 @@ $ sudo systemctl restart jitsi-videobridge2.service
 ```
 Check BDD 
 ```bash
-$ sudo prosodyctl mod_version.lua
+$ sudo prosodyctl mod_listusers
 ```
