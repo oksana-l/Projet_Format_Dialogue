@@ -128,13 +128,7 @@ $ sudo nano /etc/jitsi/jicofo/sip-communicator.properties
 ```
 And add this line
 `org.jitsi.jicofo.auth.URL=XMPP:your.domain.com`
-  
-  Everything is set up, you can restart all services
-```bash
-$ sudo systemctl restart prosody.service
-$ sudo systemctl restart jicofo.service
-$ sudo systemctl restart jitsi-videobridge2.service
-```
+
 Check BDD Users
 ```bash
 $ sudo prosodyctl mod_listusers
@@ -150,4 +144,11 @@ $ sudo prosodyctl deluser <user@hostname>
 Change password
 ```bash
 $ sudo prosodyctl passwd <username>
+```
+  
+  Everything is set up, you can restart all services
+```bash
+$ sudo systemctl restart prosody.service
+$ sudo systemctl restart jicofo.service
+$ sudo systemctl restart jitsi-videobridge2.service
 ```
