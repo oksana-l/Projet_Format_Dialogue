@@ -6,23 +6,5 @@ puis connexion ssh avenir@avenir843.pro.dns-orange.fr
 login: avenir
 pass: aaa
 
-installation de BBB:
 
-$ mkdir bin
-$ cd bin
-$ wget https://ubuntu.bigbluebutton.org/bbb-install.sh
 
-$ chmod +x bbb-install.sh
-
-$ sudo ./bbb-install.sh -w -g -v xenial-22 -s avenir843.pro.dns-orange.fr -e alexandre.caldato@laposte.net
-
-cd ~/greenlight
-$ sudo docker exec greenlight-v2 bundle exec rake user:create["Alex",
-  "alexandre.caldato@laposte.net","oksalexbadre","admin"]
-  
- >>> problème à résoudre:
- 
- page d'accueil affiche: ERREUR SERVEUR 
- 
- BigBlueButton cible et secret invalide
- Veuillez vous assurer que les mesures appropriées ont été prises.En savoir plus
