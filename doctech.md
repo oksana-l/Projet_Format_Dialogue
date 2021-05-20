@@ -145,10 +145,17 @@ Change password
 ```bash
 $ sudo prosodyctl passwd <username>
 ```
-  
+Connaître l'état des comptes utilisateurs :
+```bash
+sudo prosodyctl status
+```
   Everything is set up, you can restart all services
 ```bash
 $ sudo systemctl restart prosody.service
 $ sudo systemctl restart jicofo.service
 $ sudo systemctl restart jitsi-videobridge2.service
+```
+ou de la manière suivante :
+```bash
+$ sudo /etc/init.d/prosody restart
 ```
