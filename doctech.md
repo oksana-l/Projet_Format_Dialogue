@@ -155,7 +155,7 @@ $ sudo systemctl restart prosody.service
 $ sudo systemctl restart jicofo.service
 $ sudo systemctl restart jitsi-videobridge2.service
 ```
-ou de la manière suivante :
+or as follows :
 ```bash
 $ sudo /etc/init.d/prosody restart
 ```
