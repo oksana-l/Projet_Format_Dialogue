@@ -145,11 +145,11 @@ Change password
 ```bash
 $ sudo prosodyctl passwd <username>
 ```
-Connaître l'état des comptes utilisateurs :
+Check the status of user accounts :
 ```bash
 sudo prosodyctl status
 ```
-  Everything is set up, you can restart all services
+Everything is set up, you can restart all services
 ```bash
 $ sudo systemctl restart prosody.service
 $ sudo systemctl restart jicofo.service
