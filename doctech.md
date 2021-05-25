@@ -155,7 +155,9 @@ $ sudo systemctl restart prosody.service
 $ sudo systemctl restart jicofo.service
 $ sudo systemctl restart jitsi-videobridge2.service
 ```
-or as follows :
+If you installed Prosody from a package :
 ```bash
 $ sudo /etc/init.d/prosody restart
 ```
+
+Source : https://prosody.im/doc/prosodyctl .
