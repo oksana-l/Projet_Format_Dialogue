@@ -151,7 +151,7 @@ sudo prosodyctl status
 ```
 Everything is set up, you can restart all services
 ```bash
-$ sudo systemctl restart prosody.service
+$ sudo systemctl restart prosody.service    
 $ sudo systemctl restart jicofo.service
 $ sudo systemctl restart jitsi-videobridge2.service
 ```
@@ -160,4 +160,6 @@ If you installed Prosody from a package :
 $ sudo /etc/init.d/prosody restart
 ```
 
-Source : https://prosody.im/doc/prosodyctl .
+Sources : https://prosody.im/doc/prosodyctl ;
+          https://github.com/jitsi/jitsi-meet ;
+          https://www.oldfag.ru/2020/05/jitsi-meet-with-active-directory-authentication-and-guest-access.html ;
