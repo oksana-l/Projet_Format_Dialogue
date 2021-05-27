@@ -168,7 +168,7 @@ $ sudo nano /etc/jitsi/jicofo/sip-communicator.properties
 ```
 edit this lines
 ```bash
-org.jitsi.jicofo.BRIDGE_MUC=JvbBrewery@internal.auth.visio.triplea.fr
+org.jitsi.jicofo.BRIDGE_MUC=JvbBrewery@internal.auth.(your_adress_field)
 org.jitsi.jicofo.auth.URL=XMPP:visio.triplea.fr
 ```
 
