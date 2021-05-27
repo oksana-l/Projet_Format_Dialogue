@@ -160,6 +160,18 @@ If you installed Prosody from a package :
 $ sudo /etc/init.d/prosody restart
 ```
 
+# Custom JITSI
+
+Redirect home page
+```bash
+$ sudo nano /etc/jitsi/jicofo/sip-communicator.properties
+```
+edit this lines
+```bash
+org.jitsi.jicofo.BRIDGE_MUC=JvbBrewery@internal.auth.visio.triplea.fr
+org.jitsi.jicofo.auth.URL=XMPP:visio.triplea.fr
+```
+
 Sources : https://prosody.im/doc/prosodyctl ;
           https://github.com/jitsi/jitsi-meet ;
           https://www.oldfag.ru/2020/05/jitsi-meet-with-active-directory-authentication-and-guest-access.html ;
