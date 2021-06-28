@@ -128,11 +128,50 @@ $ sudo nano /etc/jitsi/jicofo/sip-communicator.properties
 ```
 And add this line
 `org.jitsi.jicofo.auth.URL=XMPP:your.domain.com`
-  
-  Everything is set up, you can restart all services
+
+Check BDD Users
 ```bash
-$ sudo systemctl restart prosody.service
+$ sudo prosodyctl mod_listusers
+```
+ADD User
+```bash
+$ sudo prosodyctl register <username> <hostname> <password>
+```
+DELET User
+```bash
+$ sudo prosodyctl deluser <user@hostname>
+```
+Change password
+```bash
+$ sudo prosodyctl passwd <username>
+```
+Check the status of user accounts :
+```bash
+sudo prosodyctl status
+```
+Everything is set up, you can restart all services
+```bash
+$ sudo systemctl restart prosody.service    
 $ sudo systemctl restart jicofo.service
 $ sudo systemctl restart jitsi-videobridge2.service
 ```
+If you installed Prosody from a package :
+```bash
+$ sudo /etc/init.d/prosody restart
+```
 
+# Custom JITSI
+
+Redirect home page
+```bash
+$ sudo nano /etc/jitsi/jicofo/sip-communicator.properties
+```
+edit this lines
+```bash
+org.jitsi.jicofo.BRIDGE_MUC=JvbBrewery@internal.auth.(your_adress_domain)
+org.jitsi.jicofo.auth.URL=XMPP:your.domain.com
+```
+
+Sources : https://prosody.im/doc/prosodyctl ;
+          https://github.com/jitsi/jitsi-meet ;
+          https://www.oldfag.ru/2020/05/jitsi-meet-with-active-directory-authentication-and-guest-access.html ;
